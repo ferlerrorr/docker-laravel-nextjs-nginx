@@ -60,15 +60,30 @@ git clone <repository-url>
 cd Project-Directory
 ```
 
-### Step 2: Configure Environment Variables
+### Step 2: Create Required Directories
 
-Copy the example environment file and configure it as necessary this is for the .env.exmaple in the root directory:
+Create the `api` and `ui` directories inside the `src` directory:
+
+```sh
+mkdir -p src/api
+mkdir -p src/ui
+```
+
+Your project structure should look like this:
+
+```
+src/
+├── api/
+├── ui/
+```
+
+### Step 3: Configure Environment Variables
+
+Copy the example environment file and configure it as necessary. This is for the `.env.example` file located in the root directory:
 
 ```sh
 cp .env.example .env
 ```
-
----
 
 ## Frontend (UI) Setup
 
