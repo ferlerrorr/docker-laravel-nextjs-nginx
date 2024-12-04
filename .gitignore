@@ -3,3 +3,7 @@
 mysql
 vendor
 node_modules
+
+!src
+!api
+!ui
