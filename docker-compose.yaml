@@ -82,7 +82,8 @@ services:
       CHOKIDAR_USEPOLLING: "true"
       NEXT_PUBLIC_API_HOST: ${NEXT_PUBLIC_API_HOST}
     volumes:
-      - ./src/ui:/var/www/ui
+      # - ./src/ui:/var/www/ui apply this if your not using src directory
+      - ./src/ui:/var/www/ui/src/app
       - /var/www/ui/node_modules
       - /var/www/ui/.next
     restart: unless-stopped
