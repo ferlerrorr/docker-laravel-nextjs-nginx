@@ -1,5 +1,5 @@
 
-# Project Name
+# Dockerized - Laravel - NextJs - Mysql - phpMyAdmin 
 
 The project aims to establish a self-hosted, decoupled architecture that separates the backend and frontend technologies. This approach provides flexibility, scalability, and maintainability, enabling each part to be developed and deployed independently.
 
