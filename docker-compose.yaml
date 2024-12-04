@@ -1,7 +1,6 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  
   # Web Server Service
   webserver:
     image: nginx:alpine
@@ -38,7 +37,7 @@ services:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     networks:
       - starter_networks
-  
+
   # phpMyAdmin Service
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -58,11 +57,11 @@ services:
     networks:
       - starter_networks
 
-  # API Service 
+  # API Service
   api:
     build:
       dockerfile: Dockerfile.api
-    command: 'php artisan serve --host=0.0.0.0'
+    command: "php artisan serve --host=0.0.0.0"
     container_name: ${PROJECT_NAME}-api
     volumes:
       - ./src/api:/var/www/api
@@ -74,7 +73,7 @@ services:
     networks:
       - starter_networks
 
-  # UI Service 
+  # UI Service
   ui:
     container_name: ${PROJECT_NAME}-ui
     build:
